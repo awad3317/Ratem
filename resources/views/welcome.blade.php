@@ -22,6 +22,15 @@
     <!-- تضمين الهيرو -->
     @include('components.Hero')
 
+    <!-- تضمين الهيرو -->
+    @include('components.info')
+
+    <!-- تضمين الهيرو -->
+    @include('components.How')
+
+     <!-- تضمين الهيرو -->
+    @include('components.Service')
+
     <!-- محتوى الصفحة -->
     <div class="container">
         @yield('content')
