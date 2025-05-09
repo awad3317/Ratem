@@ -1,6 +1,6 @@
 <section id="how" class="bg-light py-5">
     <div class="container">
-        <h1 class="display-4 text-primary mb-5" data-aos="fade-left">كيف نعمل</h1>
+        <h1 class="display-4 fw-450 mb-5" style="color: #5700ff" data-aos="fade-left">كيف نعمل</h1>
         
         <!-- Mobile Version (Carousel) -->
         <div class="d-md-none">
@@ -9,10 +9,10 @@
                     <!-- Slide 1 -->
                     <div class="carousel-item active">
                         <div class="d-flex">
-                            <div>
-                                <h1 class="display-1 text-muted">01</h1>
+                            <div >
+                                <h1 class="display-1 text-muted ">01</h1>
                             </div>
-                            <div class="flex-column pt-3 ps-3">
+                            <div class="flex-column pt-3 ps-3 me-4">
                                 <h3 class="h4 text-dark pb-2">دراسة و فهم متطلبات العميل</h3>
                                 <p class="text-muted pb-4">
                                     نقوم في ركن بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
@@ -31,7 +31,7 @@
                             <div>
                                 <h1 class="display-1 text-muted">02</h1>
                             </div>
-                            <div class="flex-column pt-3 ps-3">
+                            <div class="flex-column pt-3 ps-3 me-4">
                                 <h3 class="h4 text-dark pb-2">تصميم واجهات و تجربة المستخدم</h3>
                                 <p class="text-muted pb-4">
                                     بعد التأكد من فهم متطلبات المشروع يقوم الفريق بتصميم واجهات فريدة للمنتج من اجل تقديم تجربة استخدام سهله و متوافقه مع هوية المشروع لخلق تجربة مستخدم مميزة.
@@ -50,7 +50,7 @@
                                 <h1 class="display-1 text-muted">03</h1>
                             </div>
                             <div class="flex-column pt-3 ps-3">
-                                <h3 class="h4 text-dark pb-2">برمجة المنتج الرقمي</h3>
+                                <h3 class="h4 text-dark pb-2 me-4">برمجة المنتج الرقمي</h3>
                                 <p class="text-muted pb-4">
                                     بعد تصميم واجهات و تجربة المستخدم يبدا فريق التطوير ببرمجة المنتج الرقمي ونحرص في مرحلة برمجة المنتج على توزيع المهمام بين المبرمجين و مراجعة الاكواد البرمجية للتأكد من جودتها من خلال ادوات و منصات مختلفه.
                                 </p>
@@ -67,7 +67,7 @@
                             <div>
                                 <h1 class="display-1 text-muted">04</h1>
                             </div>
-                            <div class="flex-column pt-3 ps-3">
+                            <div class="flex-column pt-3 ps-3 me-4">
                                 <h3 class="h4 text-dark pb-2">اختبار جودة المنتج الرقمي</h3>
                                 <p class="text-muted pb-4">
                                     نحرص في ركن على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
@@ -85,7 +85,7 @@
                             <div>
                                 <h1 class="display-1 text-muted">05</h1>
                             </div>
-                            <div class="flex-column pt-3 ps-3">
+                            <div class="flex-column pt-3 ps-3 me-4">
                                 <h3 class="h4 text-dark pb-2">التسليم و الدعم</h3>
                                 <p class="text-muted pb-4">
                                     نقوم في ركن بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
@@ -117,7 +117,7 @@
                         <div>
                             <h1 class="display-1 text-muted">01</h1>
                         </div>
-                        <div class="flex-column pt-3 ps-4">
+                        <div class="flex-column pt-3 ps-4 me-4">
                             <h3 class="h3 text-dark pb-3" data-aos="fade-down">دراسة و فهم متطلبات العميل</h3>
                             <p class="text-muted" data-aos="fade-up">
                                 نقوم في ركن بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
@@ -138,7 +138,7 @@
                         <div>
                             <h1 class="display-1 text-muted">02</h1>
                         </div>
-                        <div class="flex-column pt-3 ps-4">
+                        <div class="flex-column pt-3 ps-4 me-4">
                             <h3 class="h3 text-dark pb-3" data-aos="fade-down">تصميم واجهات و تجربة المستخدم</h3>
                             <p class="text-muted" data-aos="fade-up">
                                 بعد التأكد من فهم متطلبات المشروع يقوم الفريق بتصميم واجهات فريدة للمنتج من اجل تقديم تجربة استخدام سهله و متوافقه مع هوية المشروع لخلق تجربة مستخدم مميزة.
@@ -158,7 +158,7 @@
                         <div>
                             <h1 class="display-1 text-muted">03</h1>
                         </div>
-                        <div class="flex-column pt-3 ps-4">
+                        <div class="flex-column pt-3 ps-4 me-4">
                             <h3 class="h3 text-dark pb-3" data-aos="fade-down">برمجة المنتج الرقمي</h3>
                             <p class="text-muted" data-aos="fade-up">
                                 بعد تصميم واجهات و تجربة المستخدم يبدا فريق التطوير ببرمجة المنتج الرقمي ونحرص في مرحلة برمجة المنتج على توزيع المهمام بين المبرمجين و مراجعة الاكواد البرمجية للتأكد من جودتها من خلال ادوات و منصات مختلفه.
@@ -178,7 +178,7 @@
                         <div>
                             <h1 class="display-1 text-muted">04</h1>
                         </div>
-                        <div class="flex-column pt-3 ps-4">
+                        <div class="flex-column pt-3 ps-4 me-4">
                             <h3 class="h3 text-dark pb-3" data-aos="fade-down">اختبار جودة المنتج الرقمي</h3>
                             <p class="text-muted" data-aos="fade-up">
                                 نحرص في ركن على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
@@ -198,7 +198,7 @@
                         <div>
                             <h1 class="display-1 text-muted">05</h1>
                         </div>
-                        <div class="flex-column pt-3 ps-4">
+                        <div class="flex-column pt-3 ps-4 me-4">
                             <h3 class="h3 text-dark pb-3" data-aos="fade-down">التسليم و الدعم</h3>
                             <p class="text-muted" data-aos="fade-up">
                                 نقوم في ركن بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.

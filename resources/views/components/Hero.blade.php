@@ -6,10 +6,10 @@
                 <div class="hero-text mb-4 mb-md-0">
                     <h1 class="display-4 fw-medium text-dark mb-3">
                         في بالك 
-                        <span class="text-primary" id="changing-text">فـكـرة</span>
+                        <span class="fw-bold" style="color: #5700ff" id="changing-text">فـكـرة</span>
                     </h1>
                     <h1 class="display-4 fw-medium text-dark">
-                        مالك الا ركــــن
+                        مالك الا رتم
                     </h1>
                 </div>
             </div>

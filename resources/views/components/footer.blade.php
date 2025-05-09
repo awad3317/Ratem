@@ -2,8 +2,8 @@
     <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
         <!-- الصورة الرئيسية -->
         <img 
-            src="{{ asset('images/RuknF.svg') }}" 
-            alt="Rukn logo for footer" 
+            src="{{ asset('images/Retme.jpg') }}" 
+            alt="Retme logo for footer" 
             width="80" 
             height="70" 
             loading="lazy" 
@@ -70,7 +70,7 @@
 
         <!-- حقوق النشر -->
         <p class="fs-20px small">
-            جميع الحقوق محفوظة لركن - 2024 © Rukn 
+            جميع الحقوق محفوظة لرتم- 2025 © Retem
         </p>
     </div>
 </footer>
