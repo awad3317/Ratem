@@ -14,7 +14,7 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mx-auto mb-1 mb-lg-0 text-center">
                 <li class="nav-item">
-                    <a class="nav-link active py-1 px-3 fw-bold" href="#">الرئيسية</a>
+                    <a class="nav-link active py-1 px-3 fw-bold" href="#home">الرئيسية</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link py-1 px-3 fw-bold" href="#info">من نحن</a>
@@ -29,10 +29,10 @@
             
             <!-- زر ابدأ مشروعك (للشاشات الكبيرة فقط) -->
             <div class="d-flex ms-2 d-none d-lg-flex">
-                <button type="button" class="btn btn-primary btn-sm px-3" onclick="openModal()">
+                <button type="button" class="btn btn-primary btn-sm py-1 px-2 mt-auto service-btn" data-bs-toggle="modal" data-bs-target="#projectModal">
                     <div class="d-flex align-items-center">
-                        <img src="{{ asset('images/Vector.svg') }}" alt="Vector icon" width="15" height="12" class="ms-2">
-                        <span class="fw-medium" style="font-size: 0.85rem;">ابدأ مشروعك</span>
+                        <img src="{{ asset('images/Vector.svg') }}" alt="ابدأ مشروعك" width="20" height="15" class="ms-1">
+                        <span style="font-size: 1rem;">ابدأ مشروعك</span>
                     </div>
                 </button>
             </div>
@@ -40,19 +40,11 @@
     </div>
 </nav>
 
-<!-- زر ابدأ مشروعك للشاشات الصغيرة (ثابت في الأسفل) -->
-<div class="d-lg-none fixed-bottom p-3 text-center" style="background-color: rgba(255,255,255,0.9); box-shadow: 0 -2px 10px rgba(0,0,0,0.1);">
-    <button type="button" class="btn btn-primary btn-sm w-75" onclick="openModal()">
-        <div class="d-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/Vector.svg') }}" alt="Vector icon" width="15" height="12" class="ms-2">
-            <span class="fw-medium" style="font-size: 0.85rem;">ابدأ مشروعك</span>
+<div class="d-lg-none fixed-bottom p-3 text-end" style="background-color: transparent; right: 10px; bottom: 10px; z-index: 1000;">
+    <button type="button" class="btn btn-primary btn-sm py-1 px-2 mt-auto service-btn" data-bs-toggle="modal" data-bs-target="#projectModal">
+        <div class="d-flex align-items-center">
+            <img src="{{ asset('images/Vector.svg') }}" alt="ابدأ مشروعك" width="20" height="15" class="ms-1">
+            <span style="font-size: 1rem;">ابدأ مشروعك</span>
         </div>
     </button>
 </div>
-
-<script>
-function openModal() {
-    console.log('فتح المودال');
-    // يمكنك إضافة كود فتح المودال هنا
-}
-</script>
