@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>Retem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            .fs-20px {
+                font-size: 20px !important;
+            }
+        }
+        .service-card-wrapper {
+        position: relative;
+        height: 100%;
+    }
+    
+    .service-card {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border-radius: 15px;
+        overflow: hidden;
+        background: white;
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    
+    .service-card-shadow {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        width: 90%;
+        height: 20px;
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 80%);
+        filter: blur(10px);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 0.7;
+        z-index: 1;
+    }
+    
+    .service-card-wrapper:hover .service-card {
+        transform: translateY(-10px) scale(1.02);
+    }
+    
+    .service-card-wrapper:hover .service-card-shadow {
+        opacity: 1;
+        transform: translateY(15px) scale(0.95);
+        width: 100%;
+        left: 0;
+        height: 30px;
+        filter: blur(15px);
+        background: radial-gradient(ellipse at center, rgba(29, 78, 216, 0.2) 0%, rgba(0,0,0,0) 80%);
+    }
+    
+    .service-btn {
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        padding: 8px 20px;
+        font-weight: 500;
+        background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+        border: none;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(29, 78, 216, 0.2);
+    }
+    
+    .service-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(29, 78, 216, 0.4);
+    }
+    
+    .service-btn::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+            to bottom right,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.1)
+        );
+        transform: rotate(30deg);
+        transition: all 0.3s ease;
+    }
+    
+    .service-btn:hover::after {
+        left: 100%;
+    }
+    
+    .card-body {
+        transition: all 0.3s ease;
+    }
+    
+    .service-card:hover .card-body {
+        transform: translateY(-5px);
+    }
+    
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="100">
+    <!-- تضمين الناف بار -->
+    @include('components.Navbar')
+
+    <!-- تضمين الهيرو -->
+    @include('components.Hero')
+
+    <!-- تضمين الهيرو -->
+    @include('components.info')
+
+    <!-- تضمين الهيرو -->
+    @include('components.How')
+
+     <!-- تضمين الهيرو -->
+    @include('components.Service')
+
+       <!-- تضمين الهيرو -->
+    @include('components.modal')
+
+    <!-- محتوى الصفحة -->
+    <div class="container">
+        @yield('content')
+    </div>
+
+    <!-- تضمين الفوتر -->
+    @include('components.footer')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script>
+        // في ملف js منفصل أو في script tag
+document.addEventListener('DOMContentLoaded', function() {
+    // تهيئة المودال
+    const projectModal = new bootstrap.Modal(document.getElementById('projectModal'));
+    
+    // فتح المودال عند النقر على زر معين
+    document.querySelector('.open-project-modal').addEventListener('click', function() {
+        projectModal.show();
+    });
+    
+    // معالجة إرسال النموذج
+    document.getElementById('projectForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        
+        fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // إظهار رسالة النجاح
+                showToast('success', 'تم استلام طلبك بنجاح... سوف يقوم فريقنا بالتواصل معك');
+                projectModal.hide();
+                this.reset();
+            } else {
+                showToast('error', 'حدث خطأ أثناء الإرسال، يرجى المحاولة لاحقاً');
+            }
+        })
+        .catch(error => {
+            showToast('error', 'حدث خطأ أثناء الإرسال، يرجى المحاولة لاحقاً');
+        });
+    });
+    
+    // دالة لعرض التنبيهات
+    function showToast(type, message) {
+        const toastContainer = document.getElementById('toastContainer');
+        const toastEl = document.createElement('div');
+        toastEl.className = `toast show align-items-center text-white bg-${type}`;
+        toastEl.setAttribute('role', 'alert');
+        toastEl.innerHTML = `
+            <div class="d-flex">
+                <div class="toast-body">${message}</div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        `;
+        toastContainer.appendChild(toastEl);
+        
+        setTimeout(() => {
+            toastEl.remove();
+        }, 5000);
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+                const phoneInput = document.querySelector("#phone");
+                const iti = window.intlTelInput(phoneInput, {
+                    initialCountry: "sa",
+                    separateDialCode: true,
+                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+                });
+                
+                phoneInput.addEventListener('change', function() {
+                    phoneInput.value = iti.getNumber();
+                });
+            });
+        </script>
+        
+</body>
+</html>
