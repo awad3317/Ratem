@@ -105,13 +105,115 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="100">
     <!-- تضمين الناف بار -->
-    @include('components.Navbar')
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm py-1" style="min-height: 60px;">
+        <div class="container-fluid px-4">
+            <!-- الشعار -->
+            <a class="navbar-brand py-0" href="#home">
+                <img src="images/Retme.jpg" alt="Retme logo" width="110" height="70">
+            </a>
+    
+            <!-- زر القائمة المختصرة -->
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="width: 1em; height: 1em;"></span>
+            </button>
+    
+            <!-- محتوى القائمة -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-1 mb-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active py-1 px-3 fw-bold" href="#home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-3 fw-bold" href="#info">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-3 fw-bold" href="#how">كيف نعمل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1 px-3 fw-bold" href="#service">ماذا نقدم</a>
+                    </li>
+                </ul>
+                
+                <!-- زر ابدأ مشروعك (للشاشات الكبيرة فقط) -->
+                <div class="d-flex ms-2 d-none d-lg-flex">
+                    <button type="button" class="btn btn-primary btn-sm py-1 px-2 mt-auto service-btn" data-bs-toggle="modal" data-bs-target="#projectModal">
+                        <div class="d-flex align-items-center">
+                            <img src="images/Vector.svg" alt="ابدأ مشروعك" width="20" height="15" class="ms-1">
+                            <span style="font-size: 1rem;">ابدأ مشروعك</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="d-lg-none fixed-bottom p-3 text-end" style="background-color: transparent; right: 10px; bottom: 10px; z-index: 1000;">
+        <button type="button" class="btn btn-primary btn-sm py-1 px-2 mt-auto service-btn" data-bs-toggle="modal" data-bs-target="#projectModal">
+            <div class="d-flex align-items-center">
+                <img src="images/Vector.svg" alt="ابدأ مشروعك" width="20" height="15" class="ms-1">
+                <span style="font-size: 1rem;">ابدأ مشروعك</span>
+            </div>
+        </button>
+    </div>
 
     <!-- تضمين الهيرو -->
-    @include('components.Hero')
+    <section class="mt-5" id="home" class="bg-backGround w-full top-0 left-0 pb-5 pb-md-4">
+        <div class="container px-4 px-lg-5 py-4 py-md-5">
+            <div class="row align-items-center">
+                <!-- النص والرسالة -->
+                <div class="col-md-7 order-md-1 order-2" data-aos="fade-left">
+                    <div class="hero-text mb-4 mb-md-0">
+                        <h1 class="display-4 fw-medium text-dark mb-3">
+                            في بالك 
+                            <span class="fw-bold" style="color: #5700ff" id="changing-text">فـكـرة</span>
+                        </h1>
+                        <h1 class="display-4 fw-medium text-dark">
+                            مالك الا رتم
+                        </h1>
+                    </div>
+                </div>
+    
+                <!-- الصورة -->
+                <div class="col-md-5 order-md-2 order-1" data-aos="fade-right">
+                    <img 
+                        src="images/retam.png" 
+                        alt="Hero section image" 
+                        class="img-fluid p-md-4"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- تضمين الهيرو -->
-    @include('components.info')
+    
+<section id="info" class=" py-5  rounded-2" style="background-color: #1d0948">
+    <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-md-row">
+            <!-- الصورة -->
+            <div class="col-md-6 mt-4 mt-md-0 px-4 px-md-0">
+                <img
+                    src="images/Info.svg"
+                    alt="Info section image"
+                    class="img-fluid p-md-5 pt-4 pt-md-0"
+                    loading="lazy"
+                    decoding="async"
+                />
+            </div>
+            
+            <!-- النص -->
+            <div class="col-md-6 pe-md-4">
+                <h1 class="display-4 fw-bold mb-4" style="color: #ff0049" data-aos="fade-left">عن رتم</h1>
+                <p class="lead text-white-50" data-aos="fade-up">
+                    رتم فريق تقني يسعى لتقديم الحلول التقنية الذكية للجهات الحكومية والخاصة والأفراد من خلال تطوير المواقع والتطبيقات وبناء المشاريع البرمجية بتجربة استخدام عملية و واجهات فريدة.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- تضمين الهيرو -->
     @include('components.How')
@@ -173,7 +275,7 @@
                 <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                     <div class="d-flex align-items-center">
                         <img 
-                            src="{{ asset('images/X.svg') }}" 
+                            src="images/X.svg" 
                             alt="X logo" 
                             width="16" 
                             height="16" 
