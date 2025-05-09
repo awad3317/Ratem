@@ -1,6 +1,6 @@
 <section id="service" class="bg-light py-5">
     <div class="container py-4">
-        <h1 class="display-4 fw-300 mb-5" style="color: #5700ff" data-aos="fade-left">خدماتنا</h1>
+        <h1 class="display-4 fw-bold mb-5" style="color: #5700ff" data-aos="fade-left">خدماتنا</h1>
         
         <div class="row g-4">
             <!-- خدمة 1 -->

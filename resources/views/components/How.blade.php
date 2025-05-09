@@ -1,6 +1,6 @@
 <section id="how" class="bg-light py-5">
     <div class="container">
-        <h1 class="display-4 fw-450 mb-5" style="color: #5700ff" data-aos="fade-left">كيف نعمل</h1>
+        <h1 class="display-4 fw-bold mb-5" style="color: #5700ff" data-aos="fade-left">كيف نعمل</h1>
         
         <!-- Mobile Version (Carousel) -->
         <div class="d-md-none">
