@@ -127,8 +127,82 @@
         @yield('content')
     </div>
 
-    <!-- تضمين الفوتر -->
-    @include('components.footer')
+    <footer style="background-color: #E0E0E0; ">
+        <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
+            <!-- الصورة الرئيسية -->
+            <img 
+                src="{{ asset('images/Retme.jpg') }}" 
+                alt="Retme logo for footer" 
+                width="80" 
+                height="70" 
+                loading="lazy" 
+                decoding="async"
+                class="mb-4"
+            >
+    
+            <!-- روابط التواصل -->
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4">
+                <!-- البريد الإلكتروني -->
+                <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
+                    <div class="d-flex align-items-center">
+                        <img 
+                            src="{{ asset('images/email.svg') }}" 
+                            alt="email logo" 
+                            width="16" 
+                            height="16" 
+                            class="ms-2"
+                        >
+                        <span class="text-secondary small">ruknit.info@gmail.com</span>
+                    </div>
+                </a>
+            
+                <!-- لينكد إن -->
+                <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
+                    <div class="d-flex align-items-center">
+                        <img 
+                            src="{{ asset('images/linkiden.svg') }}" 
+                            alt="linkedin logo" 
+                            width="16" 
+                            height="16" 
+                            class="ms-2"
+                        >
+                        <span class="text-secondary small">لينكد ان</span>
+                    </div>
+                </a>
+                <!-- تويتر (X) -->
+                <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
+                    <div class="d-flex align-items-center">
+                        <img 
+                            src="{{ asset('images/X.svg') }}" 
+                            alt="X logo" 
+                            width="16" 
+                            height="16" 
+                            class="ms-2"
+                        >
+                        <span class="text-secondary small">اكس</span>
+                    </div>
+                </a>
+                <!-- إنستجرام -->
+                <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
+                    <div class="d-flex align-items-center">
+                        <img 
+                            src="{{ asset('images/insta.svg') }}" 
+                            alt="instagram logo" 
+                            width="16" 
+                            height="16" 
+                            class="ms-2"
+                        >
+                        <span class="text-secondary small">انستجرام</span>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- حقوق النشر -->
+            <p class="fs-20px small">
+                جميع الحقوق محفوظة لرتم- 2025 © Retem
+            </p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script>
