@@ -17,7 +17,7 @@
             <!-- الصورة -->
             <div class="col-md-5 order-md-2 order-1" data-aos="fade-right">
                 <img 
-                    src="{{ asset('images/hero.svg') }}" 
+                    src="{{ asset('images/retam.png') }}" 
                     alt="Hero section image" 
                     class="img-fluid p-md-4"
                     loading="lazy"
