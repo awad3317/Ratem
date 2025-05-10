@@ -1,5 +1,5 @@
 
-<section id="info" class=" py-5  rounded-2" style="background-color: #1d0948">
+        <section id="info" class=" py-5  rounded-2" style="background-color: #1d0948">
     <div class="container">
         <div class="row align-items-center flex-column-reverse flex-md-row">
             <!-- الصورة -->
@@ -12,7 +12,7 @@
                     decoding="async"
                 />
             </div>
-            
+
             <!-- النص -->
             <div class="col-md-6 pe-md-4">
                 <h1 class="display-4 fw-bold mb-4" style="color: #ff0049" data-aos="fade-left">عن رتم</h1>

@@ -1,21 +1,26 @@
 <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true" dir="rtl">
+    
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-primary" id="projectModalLabel">ابدأ مشروعك (تواصل معنا)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content bg-white rounded-4 " style="width: 75%; margin: 0px 50px 0px ;">
+            <div class="m-2">
+                <button type="button" class="btn-close border rounded-pill me-2 mt-2" style="font-size: 10px" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title me-5 mt-3" style="color: #1d0948" id="projectModalLabel">ابدأ مشروعك (تواصل معنا)</h5>
             </div>
+            <style>
+                
+                </style>
             <div class="modal-body">
                 <form id="projectForm"  method="POST">
                     @csrf
                     <div class="mb-3">
-                        <label for="name" class="form-label text-secondary">الأسم</label>
+                        <label for="name" class="form-label text-secondary ">الأسم</label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="مثال: احمد سعيد" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="phone" class="form-label text-secondary">رقم الجوال</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
+
+                        <input id="phone" type="tel" class="form-control"  name="phone" required>
                     </div>
 
                     <div class="mb-3">
@@ -29,7 +34,7 @@
                     </div>
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary rounded-pill px-4 py-2">
+                        <button type="submit" class="btn btn-light rounded-pill px-4 py-2 text-white"  style="background-color:#1d0948 ">
                             <img src="{{ asset('images/Vector.svg') }}" alt="Send icon" width="15" class="me-2">
                             ارسال
                         </button>

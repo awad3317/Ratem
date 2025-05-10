@@ -1,7 +1,7 @@
 <section id="how" class="bg-light py-5">
     <div class="container">
         <h1 class="display-4 fw-bold mb-5" style="color: #1d0948" data-aos="fade-left">كيف نعمل</h1>
-        
+
         <!-- Mobile Version (Carousel) -->
         <div class="d-md-none">
             <div id="howCarousel" class="carousel slide bg-white shadow-sm rounded p-4" data-bs-ride="carousel">
@@ -15,7 +15,7 @@
                             <div class="flex-column pt-3 ps-3 me-4">
                                 <h3 class="h4 text-dark pb-2">دراسة و فهم متطلبات العميل</h3>
                                 <p class="text-muted pb-4">
-                                    نقوم في ركن بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
+                                    نقوم في رتم بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
                                     وضوحها واقتراح التقنيات و المنصات المناسبة للمشروع.
                                 </p>
                             </div>
@@ -24,7 +24,7 @@
                             <img src="{{ asset('images/How1.svg') }}" alt="دراسة و فهم متطلبات العميل" class="img-fluid p-3" loading="lazy">
                         </div>
                     </div>
-                    
+
                     <!-- Slide 2 -->
                     <div class="carousel-item">
                         <div class="d-flex">
@@ -42,7 +42,7 @@
                             <img src="{{ asset('images/How2.svg') }}" alt="تصميم واجهات و تجربة المستخدم" class="img-fluid p-3" loading="lazy">
                         </div>
                     </div>
-                    
+
                     <!-- Slide 3 -->
                     <div class="carousel-item">
                         <div class="d-flex">
@@ -60,7 +60,7 @@
                             <img src="{{ asset('images/How3.svg') }}" alt="برمجة المنتج الرقمي" class="img-fluid p-3" loading="lazy">
                         </div>
                     </div>
-                    
+
                     <!-- Slide 4 -->
                     <div class="carousel-item">
                         <div class="d-flex">
@@ -70,7 +70,7 @@
                             <div class="flex-column pt-3 ps-3 me-4">
                                 <h3 class="h4 text-dark pb-2">اختبار جودة المنتج الرقمي</h3>
                                 <p class="text-muted pb-4">
-                                    نحرص في ركن على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
+                                    نحرص في رتم على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
                                 </p>
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                             <img src="{{ asset('images/How4.svg') }}" alt="اختبار جودة المنتج الرقمي" class="img-fluid p-3" loading="lazy">
                         </div>
                     </div>
-                    
+
                     <!-- Slide 5 -->
                     <div class="carousel-item">
                         <div class="d-flex">
@@ -88,7 +88,7 @@
                             <div class="flex-column pt-3 ps-3 me-4">
                                 <h3 class="h4 text-dark pb-2">التسليم و الدعم</h3>
                                 <p class="text-muted pb-4">
-                                    نقوم في ركن بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
+                                    نقوم في رتم بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
                                 </p>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="carousel-indicators position-static mt-3 justify-content-center">
                     <button type="button" data-bs-target="#howCarousel" data-bs-slide-to="0" class="active bg-secondary"></button>
                     <button type="button" data-bs-target="#howCarousel" data-bs-slide-to="1" class="bg-secondary"></button>
@@ -107,7 +107,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Desktop Version -->
         <div class="d-none d-md-block">
             <!-- Step 1 -->
@@ -120,7 +120,7 @@
                         <div class="flex-column pt-3 ps-4 me-4">
                             <h3 class="h3 text-dark pb-3" data-aos="fade-down">دراسة و فهم متطلبات العميل</h3>
                             <p class="text-muted" data-aos="fade-up">
-                                نقوم في ركن بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
+                                نقوم في رتم بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
                                 وضوحها واقتراح التقنيات و المنصات المناسبة للمشروع.
                             </p>
                         </div>
@@ -130,7 +130,7 @@
                     <img src="{{ asset('images/How1.svg') }}" alt="دراسة و فهم متطلبات العميل" class="img-fluid p-5" loading="lazy">
                 </div>
             </div>
-            
+
             <!-- Step 2 -->
             <div class="row align-items-center mb-5 flex-row-reverse">
                 <div class="col-md-6">
@@ -150,7 +150,7 @@
                     <img src="{{ asset('images/How2.svg') }}" alt="تصميم واجهات و تجربة المستخدم" class="img-fluid p-5" loading="lazy">
                 </div>
             </div>
-            
+
             <!-- Step 3 -->
             <div class="row align-items-center mb-5">
                 <div class="col-md-6">
@@ -170,7 +170,7 @@
                     <img src="{{ asset('images/How3.svg') }}" alt="برمجة المنتج الرقمي" class="img-fluid p-5" loading="lazy">
                 </div>
             </div>
-            
+
             <!-- Step 4 -->
             <div class="row align-items-center mb-5 flex-row-reverse">
                 <div class="col-md-6">
@@ -181,7 +181,7 @@
                         <div class="flex-column pt-3 ps-4 me-4">
                             <h3 class="h3 text-dark pb-3" data-aos="fade-down">اختبار جودة المنتج الرقمي</h3>
                             <p class="text-muted" data-aos="fade-up">
-                                نحرص في ركن على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
+                                نحرص في رتم على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
                             </p>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
                     <img src="{{ asset('images/How4.svg') }}" alt="اختبار جودة المنتج الرقمي" class="img-fluid p-5" loading="lazy">
                 </div>
             </div>
-            
+
             <!-- Step 5 -->
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -201,7 +201,7 @@
                         <div class="flex-column pt-3 ps-4 me-4">
                             <h3 class="h3 text-dark pb-3" data-aos="fade-down">التسليم و الدعم</h3>
                             <p class="text-muted" data-aos="fade-up">
-                                نقوم في ركن بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
+                                نقوم في رتم بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
                             </p>
                         </div>
                     </div>

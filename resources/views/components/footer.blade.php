@@ -1,12 +1,12 @@
 <footer style="background-color: #E0E0E0; ">
     <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
         <!-- الصورة الرئيسية -->
-        <img 
-            src="{{ asset('images/Retme.jpg') }}" 
-            alt="Retme logo for footer" 
-            width="80" 
-            height="70" 
-            loading="lazy" 
+        <img
+            src="{{ asset('images/Retme.png') }}"
+            alt="Retme logo for footer"
+            width="190"
+            height="150"
+            loading="lazy"
             decoding="async"
             class="mb-4"
         >
@@ -16,25 +16,25 @@
             <!-- البريد الإلكتروني -->
             <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                 <div class="d-flex align-items-center">
-                    <img 
-                        src="{{ asset('images/email.svg') }}" 
-                        alt="email logo" 
-                        width="16" 
-                        height="16" 
+                    <img
+                        src="{{ asset('images/email.svg') }}"
+                        alt="email logo"
+                        width="16"
+                        height="16"
                         class="ms-2"
                     >
-                    <span class="text-secondary small">ruknit.info@gmail.com</span>
+                    <span class="text-secondary small">retme.info@gmail.com</span>
                 </div>
             </a>
-        
+
             <!-- لينكد إن -->
             <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                 <div class="d-flex align-items-center">
-                    <img 
-                        src="{{ asset('images/linkiden.svg') }}" 
-                        alt="linkedin logo" 
-                        width="16" 
-                        height="16" 
+                    <img
+                        src="{{ asset('images/linkiden.svg') }}"
+                        alt="linkedin logo"
+                        width="16"
+                        height="16"
                         class="ms-2"
                     >
                     <span class="text-secondary small">لينكد ان</span>
@@ -43,11 +43,11 @@
             <!-- تويتر (X) -->
             <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                 <div class="d-flex align-items-center">
-                    <img 
-                        src="{{ asset('images/X.svg') }}" 
-                        alt="X logo" 
-                        width="16" 
-                        height="16" 
+                    <img
+                        src="{{ asset('images/X.svg') }}"
+                        alt="X logo"
+                        width="16"
+                        height="16"
                         class="ms-2"
                     >
                     <span class="text-secondary small">اكس</span>
@@ -56,11 +56,11 @@
             <!-- إنستجرام -->
             <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                 <div class="d-flex align-items-center">
-                    <img 
-                        src="{{ asset('images/insta.svg') }}" 
-                        alt="instagram logo" 
-                        width="16" 
-                        height="16" 
+                    <img
+                        src="{{ asset('images/insta.svg') }}"
+                        alt="instagram logo"
+                        width="16"
+                        height="16"
                         class="ms-2"
                     >
                     <span class="text-secondary small">انستجرام</span>
