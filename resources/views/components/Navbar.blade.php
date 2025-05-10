@@ -2,7 +2,7 @@
     <div class="container-fluid px-4">
         <!-- الشعار -->
         <a class="navbar-brand py-0" href="#home">
-            <img src="{{ asset('images/Retme.png') }}" alt="Retme logo" width="110" height="70">
+            <img src="{{ asset('images/Retme.png') }}" alt="Retme logo" width="120" height="90">
         </a>
 
         <!-- زر القائمة المختصرة -->
@@ -22,16 +22,16 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mx-auto mb-1 mb-lg-0 text-center">
                 <li class="nav-item">
-                    <a class="nav-link active py-1  px-3 fw-bold ro" href="#home">الرئيسية</a>
+                    <a class="nav-link active py-1  px-3 fw-bold fs-5" href="#home">الرئيسية</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link py-1 px-3 fw-bold" href="#info">من نحن</a>
+                    <a class="nav-link py-1 px-3 fw-bold fs-5" href="#info">من نحن</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link py-1 px-3 fw-bold" href="#how">كيف نعمل</a>
+                    <a class="nav-link py-1 px-3 fw-bold fs-5" href="#how">كيف نعمل</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link py-1 px-3 fw-bold" href="#service">ماذا نقدم</a>
+                    <a class="nav-link py-1 px-3 fw-bold fs-5" href="#service">ماذا نقدم</a>
                 </li>
             </ul>
 
