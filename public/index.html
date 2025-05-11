@@ -107,6 +107,9 @@
             color: #ff0049 !important;
             font-weight: bold;
         }
+        .changing-text {
+            transition: color 0.5s ease-in-out;
+        }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="100">
@@ -171,7 +174,7 @@
                     <div class="hero-text mb-4 mb-md-0">
                         <h1 class="display-4 fw-medium text-dark mb-3">
                             في بالك
-                            <span class="fw-bold" style="color: #5700ff" id="changing-text">فـكـرة</span>
+                            <span class="fw-bold changing-text" style="color: #5700ff">فـكـرة</span>
                         </h1>
                         <h1 class="display-4 fw-medium text-dark">
                             مالك الا رتم
@@ -736,6 +739,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const texts = [
+                {text: "فـكـرة", color: "#5700ff"},
+                {text: "مـشـروع", color: "#ff0066"},
+                {text: "حـل", color: "#5700ff"},
+                {text: "إبـداع", color: "#ff0066"}
+            ];
+
+            const changingText = document.querySelector('.changing-text');
+            let currentIndex = 0;
+
+            function changeText() {
+                currentIndex = (currentIndex + 1) % texts.length;
+                changingText.style.color = texts[currentIndex].color;
+                changingText.textContent = texts[currentIndex].text;
+            }
+            setInterval(changeText, 2000);
+        });
+    </script>
 
 </body>
 </html>

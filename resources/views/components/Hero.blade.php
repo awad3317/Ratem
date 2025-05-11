@@ -36,8 +36,8 @@
             const texts = [
                 {text: "فـكـرة", color: "#5700ff"},
                 {text: "مـشـروع", color: "#ff0066"},
-                {text: "حـل", color: "#00cc99"},
-                {text: "إبـداع", color: "#ff9900"}
+                {text: "حـل", color: "#5700ff"},
+                {text: "إبـداع", color: "#ff0066"}
             ];
 
             const changingText = document.querySelector('.changing-text');
@@ -48,8 +48,6 @@
                 changingText.style.color = texts[currentIndex].color;
                 changingText.textContent = texts[currentIndex].text;
             }
-
-            // تغيير النص كل 2000 ميلي ثانية (2 ثانية)
             setInterval(changeText, 2000);
         });
     </script>
