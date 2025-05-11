@@ -14,7 +14,7 @@
         <!-- روابط التواصل -->
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4">
             <!-- البريد الإلكتروني -->
-            <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
+            <a href="https://www.instagram.com/retem_it" target='_blank' class="text-decoration-none">
                 <div class="d-flex align-items-center">
                     <img
                         src="{{ asset('images/email.svg') }}"
@@ -28,7 +28,7 @@
             </a>
 
             <!-- لينكد إن -->
-            <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
+            <a href="https://www.instagram.com/retem_it" target='_blank' class="text-decoration-none">
                 <div class="d-flex align-items-center">
                     <img
                         src="{{ asset('images/linkiden.svg') }}"
@@ -41,7 +41,7 @@
                 </div>
             </a>
             <!-- تويتر (X) -->
-            <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
+            <a href="https://www.instagram.com/retem_it" target='_blank' class="text-decoration-none">
                 <div class="d-flex align-items-center">
                     <img
                         src="{{ asset('images/X.svg') }}"
@@ -54,7 +54,7 @@
                 </div>
             </a>
             <!-- إنستجرام -->
-            <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
+            <a href="https://www.instagram.com/retem_it" target='_blank' class="text-decoration-none">
                 <div class="d-flex align-items-center">
                     <img
                         src="{{ asset('images/insta.svg') }}"
