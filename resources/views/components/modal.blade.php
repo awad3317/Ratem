@@ -1,14 +1,12 @@
 <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true" dir="rtl">
-    
+
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-white rounded-4 " style="width: 75%; margin: 0px 50px 0px ;">
             <div class="m-2">
                 <button type="button" class="btn-close border rounded-pill me-2 mt-2" style="font-size: 10px" data-bs-dismiss="modal" aria-label="Close"></button>
                 <h5 class="modal-title me-5 mt-3" style="color: #1d0948" id="projectModalLabel">ابدأ مشروعك (تواصل معنا)</h5>
             </div>
-            <style>
-                
-                </style>
+
             <div class="modal-body">
                 <form id="projectForm"  method="POST">
                     @csrf

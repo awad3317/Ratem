@@ -17,7 +17,7 @@
         position: relative;
         height: 100%;
     }
-    
+
     .service-card {
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         border-radius: 15px;
@@ -28,7 +28,7 @@
         height: 100%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     }
-    
+
     .service-card-shadow {
         position: absolute;
         bottom: 0;
@@ -41,11 +41,11 @@
         opacity: 0.7;
         z-index: 1;
     }
-    
+
     .service-card-wrapper:hover .service-card {
         transform: translateY(-10px) scale(1.02);
     }
-    
+
     .service-card-wrapper:hover .service-card-shadow {
         opacity: 1;
         transform: translateY(15px) scale(0.95);
@@ -55,7 +55,7 @@
         filter: blur(15px);
         background: radial-gradient(ellipse at center, rgba(29, 78, 216, 0.2) 0%, rgba(0,0,0,0) 80%);
     }
-    
+
     .service-btn {
         transition: all 0.3s ease;
         border-radius: 8px;
@@ -67,12 +67,12 @@
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(29, 78, 216, 0.2);
     }
-    
+
     .service-btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 5px 15px rgba(29, 78, 216, 0.4);
     }
-    
+
     .service-btn::after {
         content: '';
         position: absolute;
@@ -88,19 +88,25 @@
         transform: rotate(30deg);
         transition: all 0.3s ease;
     }
-    
+
     .service-btn:hover::after {
         left: 100%;
     }
-    
+
     .card-body {
         transition: all 0.3s ease;
     }
-    
+
     .service-card:hover .card-body {
         transform: translateY(-5px);
     }
-    
+        .nav-item  a:hover {
+            color: #ff0049;
+        }
+        .nav-link.active {
+            color: #ff0049 !important;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="100">
@@ -109,31 +115,31 @@
         <div class="container-fluid px-4">
             <!-- الشعار -->
             <a class="navbar-brand py-0" href="#home">
-                <img src="images/Retme.jpg" alt="Retme logo" width="110" height="70">
+                <img src="images/Retme.png" alt="Retme logo" width="120" height="90">
             </a>
-    
+
             <!-- زر القائمة المختصرة -->
             <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="width: 1em; height: 1em;"></span>
             </button>
-    
+
             <!-- محتوى القائمة -->
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav mx-auto mb-1 mb-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link active py-1 px-3 fw-bold" href="#home">الرئيسية</a>
+                        <a class="nav-link active py-1  px-3 fw-bold fs-5" href="#home">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-1 px-3 fw-bold" href="#info">من نحن</a>
+                        <a class="nav-link py-1 px-3 fw-bold fs-5" href="#info">من نحن</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-1 px-3 fw-bold" href="#how">كيف نعمل</a>
+                        <a class="nav-link py-1 px-3 fw-bold fs-5" href="#how">كيف نعمل</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-1 px-3 fw-bold" href="#service">ماذا نقدم</a>
+                        <a class="nav-link py-1 px-3 fw-bold fs-5" href="#service">ماذا نقدم</a>
                     </li>
                 </ul>
-                
+
                 <!-- زر ابدأ مشروعك (للشاشات الكبيرة فقط) -->
                 <div class="d-flex ms-2 d-none d-lg-flex">
                     <button type="button" class="btn btn-primary btn-sm py-1 px-2 mt-auto service-btn" data-bs-toggle="modal" data-bs-target="#projectModal">
@@ -146,7 +152,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="d-lg-none fixed-bottom p-3 text-end" style="background-color: transparent; right: 10px; bottom: 10px; z-index: 1000;">
         <button type="button" class="btn btn-primary btn-sm py-1 px-2 mt-auto service-btn" data-bs-toggle="modal" data-bs-target="#projectModal">
             <div class="d-flex align-items-center">
@@ -164,7 +170,7 @@
                 <div class="col-md-7 order-md-1 order-2" data-aos="fade-left">
                     <div class="hero-text mb-4 mb-md-0">
                         <h1 class="display-4 fw-medium text-dark mb-3">
-                            في بالك 
+                            في بالك
                             <span class="fw-bold" style="color: #5700ff" id="changing-text">فـكـرة</span>
                         </h1>
                         <h1 class="display-4 fw-medium text-dark">
@@ -172,12 +178,12 @@
                         </h1>
                     </div>
                 </div>
-    
+
                 <!-- الصورة -->
                 <div class="col-md-5 order-md-2 order-1" data-aos="fade-right">
-                    <img 
-                        src="images/retam.png" 
-                        alt="Hero section image" 
+                    <img
+                        src="images/retam.png"
+                        alt="Hero section image"
                         class="img-fluid p-md-4"
                         loading="lazy"
                         decoding="async"
@@ -188,7 +194,7 @@
     </section>
 
     <!-- تضمين الهيرو -->
-    
+
 <section id="info" class=" py-5  rounded-2" style="background-color: #1d0948">
     <div class="container">
         <div class="row align-items-center flex-column-reverse flex-md-row">
@@ -202,7 +208,7 @@
                     decoding="async"
                 />
             </div>
-            
+
             <!-- النص -->
             <div class="col-md-6 pe-md-4">
                 <h1 class="display-4 fw-bold mb-4" style="color: #ff0049" data-aos="fade-left">عن رتم</h1>
@@ -219,7 +225,7 @@
     <section id="how" class="bg-light py-5">
         <div class="container">
             <h1 class="display-4 fw-bold mb-5" style="color: #1d0948" data-aos="fade-left">كيف نعمل</h1>
-            
+
             <!-- Mobile Version (Carousel) -->
             <div class="d-md-none">
                 <div id="howCarousel" class="carousel slide bg-white shadow-sm rounded p-4" data-bs-ride="carousel">
@@ -233,7 +239,7 @@
                                 <div class="flex-column pt-3 ps-3 me-4">
                                     <h3 class="h4 text-dark pb-2">دراسة و فهم متطلبات العميل</h3>
                                     <p class="text-muted pb-4">
-                                        نقوم في ركن بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
+                                        نقوم في رتم بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
                                         وضوحها واقتراح التقنيات و المنصات المناسبة للمشروع.
                                     </p>
                                 </div>
@@ -242,7 +248,7 @@
                                 <img src="images/How1.svg" alt="دراسة و فهم متطلبات العميل" class="img-fluid p-3" loading="lazy">
                             </div>
                         </div>
-                        
+
                         <!-- Slide 2 -->
                         <div class="carousel-item">
                             <div class="d-flex">
@@ -260,7 +266,7 @@
                                 <img src="images/How2.svg" alt="تصميم واجهات و تجربة المستخدم" class="img-fluid p-3" loading="lazy">
                             </div>
                         </div>
-                        
+
                         <!-- Slide 3 -->
                         <div class="carousel-item">
                             <div class="d-flex">
@@ -278,7 +284,7 @@
                                 <img src="images/How3.svg" alt="برمجة المنتج الرقمي" class="img-fluid p-3" loading="lazy">
                             </div>
                         </div>
-                        
+
                         <!-- Slide 4 -->
                         <div class="carousel-item">
                             <div class="d-flex">
@@ -288,7 +294,7 @@
                                 <div class="flex-column pt-3 ps-3 me-4">
                                     <h3 class="h4 text-dark pb-2">اختبار جودة المنتج الرقمي</h3>
                                     <p class="text-muted pb-4">
-                                        نحرص في ركن على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
+                                        نحرص في رتم على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
                                     </p>
                                 </div>
                             </div>
@@ -296,7 +302,7 @@
                                 <img src="images/How4.svg" alt="اختبار جودة المنتج الرقمي" class="img-fluid p-3" loading="lazy">
                             </div>
                         </div>
-                        
+
                         <!-- Slide 5 -->
                         <div class="carousel-item">
                             <div class="d-flex">
@@ -306,7 +312,7 @@
                                 <div class="flex-column pt-3 ps-3 me-4">
                                     <h3 class="h4 text-dark pb-2">التسليم و الدعم</h3>
                                     <p class="text-muted pb-4">
-                                        نقوم في ركن بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
+                                        نقوم في رتم بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
                                     </p>
                                 </div>
                             </div>
@@ -315,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="carousel-indicators position-static mt-3 justify-content-center">
                         <button type="button" data-bs-target="#howCarousel" data-bs-slide-to="0" class="active bg-secondary"></button>
                         <button type="button" data-bs-target="#howCarousel" data-bs-slide-to="1" class="bg-secondary"></button>
@@ -325,7 +331,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Desktop Version -->
             <div class="d-none d-md-block">
                 <!-- Step 1 -->
@@ -338,7 +344,7 @@
                             <div class="flex-column pt-3 ps-4 me-4">
                                 <h3 class="h3 text-dark pb-3" data-aos="fade-down">دراسة و فهم متطلبات العميل</h3>
                                 <p class="text-muted" data-aos="fade-up">
-                                    نقوم في ركن بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
+                                    نقوم في رتم بالفهم العميق لمتطلبات العميل ودراستها للتأكد من
                                     وضوحها واقتراح التقنيات و المنصات المناسبة للمشروع.
                                 </p>
                             </div>
@@ -348,7 +354,7 @@
                         <img src="images/How1.svg" alt="دراسة و فهم متطلبات العميل" class="img-fluid p-5" loading="lazy">
                     </div>
                 </div>
-                
+
                 <!-- Step 2 -->
                 <div class="row align-items-center mb-5 flex-row-reverse">
                     <div class="col-md-6">
@@ -368,7 +374,7 @@
                         <img src="images/How2.svg" alt="تصميم واجهات و تجربة المستخدم" class="img-fluid p-5" loading="lazy">
                     </div>
                 </div>
-                
+
                 <!-- Step 3 -->
                 <div class="row align-items-center mb-5">
                     <div class="col-md-6">
@@ -388,7 +394,7 @@
                         <img src="images/How3.svg" alt="برمجة المنتج الرقمي" class="img-fluid p-5" loading="lazy">
                     </div>
                 </div>
-                
+
                 <!-- Step 4 -->
                 <div class="row align-items-center mb-5 flex-row-reverse">
                     <div class="col-md-6">
@@ -399,7 +405,7 @@
                             <div class="flex-column pt-3 ps-4 me-4">
                                 <h3 class="h3 text-dark pb-3" data-aos="fade-down">اختبار جودة المنتج الرقمي</h3>
                                 <p class="text-muted" data-aos="fade-up">
-                                    نحرص في ركن على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
+                                    نحرص في رتم على عمل الاختبارات التقنية اللازمة بعد الانتهاء من كل نسخة اولية لضمان التأكد من جودة الاكواد البرمجية و مطابقتها للمتطلبات التقنية و الامنيه اللازمة.
                                 </p>
                             </div>
                         </div>
@@ -408,7 +414,7 @@
                         <img src="images/How4.svg" alt="اختبار جودة المنتج الرقمي" class="img-fluid p-5" loading="lazy">
                     </div>
                 </div>
-                
+
                 <!-- Step 5 -->
                 <div class="row align-items-center">
                     <div class="col-md-6">
@@ -419,7 +425,7 @@
                             <div class="flex-column pt-3 ps-4 me-4">
                                 <h3 class="h3 text-dark pb-3" data-aos="fade-down">التسليم و الدعم</h3>
                                 <p class="text-muted" data-aos="fade-up">
-                                    نقوم في ركن بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
+                                    نقوم في رتم بعد الانتهاء من تطوير المنتج التقني باطلاقه ومتابعة اداءه لضمان الجودة وتقديم الدعم الفني المستمر للتأكد من جودة المنتج الرقمي على المدى البعيد.
                                 </p>
                             </div>
                         </div>
@@ -436,7 +442,7 @@
      <section id="service" class="bg-light py-5">
         <div class="container py-4">
             <h1 class="display-4 fw-bold mb-5" style="color: #1d0948" data-aos="fade-left">خدماتنا</h1>
-            
+
             <div class="row g-4">
                 <!-- خدمة 1 -->
                 <div class="col-md-4 col-sm-6" data-aos="fade-left">
@@ -456,7 +462,7 @@
                         <div class="service-card-shadow"></div>
                     </div>
                 </div>
-                
+
                 <!-- خدمة 2 -->
                 <div class="col-md-4 col-sm-6" data-aos="fade-left" data-aos-delay="100">
                     <div class="service-card-wrapper">
@@ -475,7 +481,7 @@
                         <div class="service-card-shadow"></div>
                     </div>
                 </div>
-                
+
                 <!-- خدمة 3 -->
                 <div class="col-md-4 col-sm-6" data-aos="fade-left" data-aos-delay="200">
                     <div class="service-card-wrapper">
@@ -494,7 +500,7 @@
                         <div class="service-card-shadow"></div>
                     </div>
                 </div>
-                
+
                 <!-- خدمة 4 -->
                 <div class="col-md-4 col-sm-6" data-aos="fade-left" data-aos-delay="300">
                     <div class="service-card-wrapper">
@@ -513,7 +519,7 @@
                         <div class="service-card-shadow"></div>
                     </div>
                 </div>
-                
+
                 <!-- خدمة 5 -->
                 <div class="col-md-4 col-sm-6" data-aos="fade-left" data-aos-delay="400">
                     <div class="service-card-wrapper">
@@ -535,15 +541,15 @@
             </div>
         </div>
     </section>
-    
+
 
        <!-- تضمين الهيرو -->
        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true" dir="rtl">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-primary" id="projectModalLabel">ابدأ مشروعك (تواصل معنا)</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content bg-white rounded-4 " style="width: 75%; margin: 0px 50px 0px ;">
+                <div class="m-2">
+                    <button type="button" class="btn-close border rounded-pill me-2 mt-2" style="font-size: 10px" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title me-5 mt-3" style="color: #1d0948" id="projectModalLabel">ابدأ مشروعك (تواصل معنا)</h5>
                 </div>
                 <div class="modal-body">
                     <form id="projectForm"  method="POST">
@@ -552,22 +558,22 @@
                             <label for="name" class="form-label text-secondary">الأسم</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="مثال: احمد سعيد" required>
                         </div>
-    
+
                         <div class="mb-3">
                             <label for="phone" class="form-label text-secondary">رقم الجوال</label>
                             <input type="tel" class="form-control" id="phone" name="phone" required>
                         </div>
-    
+
                         <div class="mb-3">
                             <label for="email" class="form-label text-secondary">البريد الالكتروني</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="مثال: ahmed@gmail.com" required>
                         </div>
-    
+
                         <div class="mb-3">
                             <label for="message" class="form-label text-secondary">وصف المشروع</label>
                             <textarea class="form-control" id="message" name="message" rows="3" placeholder="تفاصيل المشروع..."></textarea>
                         </div>
-    
+
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary rounded-pill px-4 py-2">
                                 <img src="{{ asset('images/Vector.svg') }}" alt="Send icon" width="15" class="me-2">
@@ -583,40 +589,40 @@
     <footer style="background-color: #E0E0E0; ">
         <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
             <!-- الصورة الرئيسية -->
-            <img 
-                src="images/Retme.jpg" 
-                alt="Retme logo for footer" 
-                width="80" 
-                height="70" 
-                loading="lazy" 
+            <img
+                src="images/Retme.jpg"
+                alt="Retme logo for footer"
+                width="80"
+                height="70"
+                loading="lazy"
                 decoding="async"
                 class="mb-4"
             >
-    
+
             <!-- روابط التواصل -->
             <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4">
                 <!-- البريد الإلكتروني -->
                 <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                     <div class="d-flex align-items-center">
-                        <img 
-                            src="images/email.svg" 
-                            alt="email logo" 
-                            width="16" 
-                            height="16" 
+                        <img
+                            src="images/email.svg"
+                            alt="email logo"
+                            width="16"
+                            height="16"
                             class="ms-2"
                         >
                         <span class="text-secondary small">ruknit.info@gmail.com</span>
                     </div>
                 </a>
-            
+
                 <!-- لينكد إن -->
                 <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                     <div class="d-flex align-items-center">
-                        <img 
-                            src="images/linkiden.svg" 
-                            alt="linkedin logo" 
-                            width="16" 
-                            height="16" 
+                        <img
+                            src="images/linkiden.svg"
+                            alt="linkedin logo"
+                            width="16"
+                            height="16"
                             class="ms-2"
                         >
                         <span class="text-secondary small">لينكد ان</span>
@@ -625,11 +631,11 @@
                 <!-- تويتر (X) -->
                 <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                     <div class="d-flex align-items-center">
-                        <img 
-                            src="images/X.svg" 
-                            alt="X logo" 
-                            width="16" 
-                            height="16" 
+                        <img
+                            src="images/X.svg"
+                            alt="X logo"
+                            width="16"
+                            height="16"
                             class="ms-2"
                         >
                         <span class="text-secondary small">اكس</span>
@@ -638,18 +644,18 @@
                 <!-- إنستجرام -->
                 <a href="https://www.instagram.com/rukn_it" target='_blank' class="text-decoration-none">
                     <div class="d-flex align-items-center">
-                        <img 
-                            src="images/insta.svg" 
-                            alt="instagram logo" 
-                            width="16" 
-                            height="16" 
+                        <img
+                            src="images/insta.svg"
+                            alt="instagram logo"
+                            width="16"
+                            height="16"
                             class="ms-2"
                         >
                         <span class="text-secondary small">انستجرام</span>
                     </div>
                 </a>
             </div>
-    
+
             <!-- حقوق النشر -->
             <p class="fs-20px small">
                 جميع الحقوق محفوظة لرتم- 2025 © Retem
@@ -663,18 +669,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     // تهيئة المودال
     const projectModal = new bootstrap.Modal(document.getElementById('projectModal'));
-    
+
     // فتح المودال عند النقر على زر معين
     document.querySelector('.open-project-modal').addEventListener('click', function() {
         projectModal.show();
     });
-    
+
     // معالجة إرسال النموذج
     document.getElementById('projectForm').addEventListener('submit', function(e) {
         e.preventDefault();
-        
+
         const formData = new FormData(this);
-        
+
         fetch(this.action, {
             method: 'POST',
             body: formData,
@@ -698,7 +704,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showToast('error', 'حدث خطأ أثناء الإرسال، يرجى المحاولة لاحقاً');
         });
     });
-    
+
     // دالة لعرض التنبيهات
     function showToast(type, message) {
         const toastContainer = document.getElementById('toastContainer');
@@ -712,7 +718,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
         toastContainer.appendChild(toastEl);
-        
+
         setTimeout(() => {
             toastEl.remove();
         }, 5000);
@@ -725,12 +731,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     separateDialCode: true,
                     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
                 });
-                
+
                 phoneInput.addEventListener('change', function() {
                     phoneInput.value = iti.getNumber();
                 });
             });
         </script>
-        
+
 </body>
 </html>
