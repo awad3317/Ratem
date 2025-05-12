@@ -1,8 +1,8 @@
-<footer style="background-color: #E0E0E0; ">
+<footer style="background-color: #1d0948">
     <div class="container py-5 d-flex flex-column justify-content-center align-items-center">
         <!-- الصورة الرئيسية -->
         <img
-            src="{{ asset('images/Retme.png') }}"
+            src="{{ asset('images/logo_footer.png') }}"
             alt="Retme logo for footer"
             width="190"
             height="150"
@@ -23,7 +23,7 @@
                         height="16"
                         class="ms-2"
                     >
-                    <span class="text-secondary small">retme.info@gmail.com</span>
+                    <span style="color: white" class="small">retme.info@gmail.com</span>
                 </div>
             </a>
 
@@ -37,7 +37,7 @@
                         height="16"
                         class="ms-2"
                     >
-                    <span class="text-secondary small">لينكد ان</span>
+                    <span style="color: white" class="small">لينكد ان</span>
                 </div>
             </a>
             <!-- تويتر (X) -->
@@ -50,7 +50,7 @@
                         height="16"
                         class="ms-2"
                     >
-                    <span class="text-secondary small">اكس</span>
+                    <span style="color: white" class="small">اكس</span>
                 </div>
             </a>
             <!-- إنستجرام -->
@@ -63,13 +63,13 @@
                         height="16"
                         class="ms-2"
                     >
-                    <span class="text-secondary small">انستجرام</span>
+                    <span style="color: white" class="small">انستجرام</span>
                 </div>
             </a>
         </div>
 
         <!-- حقوق النشر -->
-        <p class="fs-20px small">
+        <p style="color: white" class="fs-20px small">
             جميع الحقوق محفوظة لرتم- 2025 © Retem
         </p>
     </div>
